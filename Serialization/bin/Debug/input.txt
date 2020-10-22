@@ -1,0 +1,8 @@
+tatneft 400 true
+Yandex 4500 false
+NorNikel 20000 true
+mtc 320 true
+Gazprom 170 true
+Sber 220 true
+tattelecom 3000 true
+tesla 

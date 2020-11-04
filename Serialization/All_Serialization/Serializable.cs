@@ -38,7 +38,7 @@ namespace Serialization.All_Serialization
         public static void Serializable_XML(List<Security_paper> security_papers)
         {
             XmlSerializer formatter = new XmlSerializer(typeof(List<Security_paper>));
-
+            File.WriteAllText("security_papers.xml", string.Empty);
             using (FileStream fs = new FileStream("security_papers.xml", FileMode.OpenOrCreate))
             {
                 formatter.Serialize(fs, security_papers);

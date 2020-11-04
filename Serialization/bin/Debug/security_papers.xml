@@ -59,4 +59,10 @@
     <Yield>10</Yield>
     <Amortization>false</Amortization>
   </Security_paper>
+  <Security_paper xsi:type="Bond">
+    <Name>Penz_obl</Name>
+    <Cost>900</Cost>
+    <Yield>8</Yield>
+    <Amortization>true</Amortization>
+  </Security_paper>
 </ArrayOfSecurity_paper>

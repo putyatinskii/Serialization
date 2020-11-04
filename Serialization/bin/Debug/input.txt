@@ -9,3 +9,4 @@ OFZ 1050 7 false
 Sber 220 true
 tattelecom 0,03 true
 Sar_obl 1010 10 false
+Penz_obl 900 8 true

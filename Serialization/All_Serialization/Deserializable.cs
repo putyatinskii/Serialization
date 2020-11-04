@@ -19,7 +19,7 @@ namespace Serialization.All_Serialization
             BinaryFormatter formatter = new BinaryFormatter();
             using (FileStream fs = new FileStream("security_papers.dat", FileMode.OpenOrCreate))
             {
-                List<Security_paper> security_papers = new List<Security_paper>((List<Security_paper>)formatter.Deserialize(fs));
+                List<Security_paper> security_papers = (List<Security_paper>)formatter.Deserialize(fs);
                 investor.AddRange(security_papers);
                 Console.WriteLine("Объект десериализован");
             }
@@ -43,7 +43,7 @@ namespace Serialization.All_Serialization
             using (FileStream fs = new FileStream("security_papers.xml", FileMode.OpenOrCreate))
             {
                 XmlSerializer formatter = new XmlSerializer(typeof(List<Security_paper>));
-                List<Security_paper> security_papers = new List<Security_paper>((List<Security_paper>)formatter.Deserialize(fs));
+                List<Security_paper> security_papers = (List<Security_paper>)formatter.Deserialize(fs);
                 investor.AddRange(security_papers);
                 Console.WriteLine("Объект десериализован");
             }

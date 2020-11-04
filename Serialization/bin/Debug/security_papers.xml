@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<ArrayOfSecurity_paper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Security_paper xsi:type="Stock">
+    <Name>tatneft</Name>
+    <Cost>400</Cost>
+    <Presense_divident>true</Presense_divident>
+  </Security_paper>
+  <Security_paper xsi:type="Stock">
+    <Name>Yandex</Name>
+    <Cost>4500</Cost>
+    <Presense_divident>false</Presense_divident>
+  </Security_paper>
+  <Security_paper xsi:type="Bond">
+    <Name>Bistro_dengi</Name>
+    <Cost>950</Cost>
+    <Yield>16</Yield>
+    <Amortization>true</Amortization>
+  </Security_paper>
+  <Security_paper xsi:type="Stock">
+    <Name>NorNikel</Name>
+    <Cost>20000</Cost>
+    <Presense_divident>true</Presense_divident>
+  </Security_paper>
+  <Security_paper xsi:type="Bond">
+    <Name>Brusnika</Name>
+    <Cost>1000</Cost>
+    <Yield>12</Yield>
+    <Amortization>true</Amortization>
+  </Security_paper>
+  <Security_paper xsi:type="Stock">
+    <Name>mtc</Name>
+    <Cost>320</Cost>
+    <Presense_divident>true</Presense_divident>
+  </Security_paper>
+  <Security_paper xsi:type="Stock">
+    <Name>Gazprom</Name>
+    <Cost>170</Cost>
+    <Presense_divident>true</Presense_divident>
+  </Security_paper>
+  <Security_paper xsi:type="Bond">
+    <Name>OFZ</Name>
+    <Cost>1050</Cost>
+    <Yield>7</Yield>
+    <Amortization>false</Amortization>
+  </Security_paper>
+  <Security_paper xsi:type="Stock">
+    <Name>Sber</Name>
+    <Cost>220</Cost>
+    <Presense_divident>true</Presense_divident>
+  </Security_paper>
+  <Security_paper xsi:type="Stock">
+    <Name>tattelecom</Name>
+    <Cost>0.03</Cost>
+    <Presense_divident>true</Presense_divident>
+  </Security_paper>
+  <Security_paper xsi:type="Bond">
+    <Name>Sar_obl</Name>
+    <Cost>1010</Cost>
+    <Yield>10</Yield>
+    <Amortization>false</Amortization>
+  </Security_paper>
+</ArrayOfSecurity_paper>

@@ -4,30 +4,32 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Serialization
+namespace Serialization.Investor
 {
     [Serializable]
-    public class Stock
+    public class Stock : Security_paper
     {
-        public string name { get; set; }
-        public double cost { get; set; }
-        public bool divident { get; set; }
+        private bool presense_divident;
 
         public Stock()
         {
-
+            
         }
 
-        public Stock(string name, double cost, bool divident)
+        public bool Presense_divident
         {
-            this.name = name;
-            this.cost = cost;
-            this.divident = divident;
+            get => presense_divident;
+            set => presense_divident = value;
+        }
+
+        public Stock(string name, double cost, bool presense_divident) : base(name, cost)
+        {
+            this.Presense_divident = presense_divident;
         }
 
         public override string ToString()
         {
-            return name + "  " + cost + "  " + divident;
+            return "Stock: " + base.ToString() + " " + presense_divident;
         }
     }
 }

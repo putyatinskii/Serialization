@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Runtime.Serialization.Formatters.Binary;
 using Serialization.All_Serialization;
+using Serialization.Investor;
 
 namespace Serialization
 {
@@ -22,7 +23,7 @@ namespace Serialization
 
         static void Main(string[] args)
         {
-            Invector_acc invector = new Invector_acc();
+            Investor_acc investor = new Investor_acc();
             Operation op;
             Console.WriteLine("Press 1 to read txt file");
             Console.WriteLine("Press 2 to deserialize dat file");
@@ -38,26 +39,28 @@ namespace Serialization
                         foreach (string str_elem in str)
                         {
                             string[] sec = str_elem.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-                            if (sec.Length == 3) invector.Add(new Stock(sec[0], int.Parse(sec[1]), bool.Parse(sec[2])));
+                            if (sec.Length == 3) investor.Add(new Stock(sec[0], double.Parse(sec[1]), bool.Parse(sec[2])));
+                            else if (sec.Length == 4) investor.Add(new Bond(sec[0], double.Parse(sec[1]), double.Parse(sec[2]), bool.Parse(sec[3])));
                         }
                     }
-                    Serializable.Serializable_Binary(invector.Get_list);
-                    Serializable.Serializable_XML(invector.Get_list);
-                    Serializable.Serializable_Json(invector.Get_list);
+                    Serializable.Serializable_Binary(investor.GetSecurities);
+                    Serializable.Serializable_XML(investor.GetSecurities);
+                    Serializable.Serializable_Json(investor.GetSecurities);
+                    Console.WriteLine();
                     break;
                 case Operation.d_dat:
-                    Deserializable.Binary(invector);
+                    Deserializable.Binary(investor);
                     break;
                 case Operation.d_json:
-                    Deserializable.Json(invector);
+                    Deserializable.Json(investor);
                     break;
                 case Operation.d_xml:
-                    Deserializable.XML(invector);
+                    Deserializable.XML(investor);
                     break;
             }
-            foreach (Stock elem in invector.Get_list)
+            foreach (Security_paper elem in investor.GetSecurities)
             {
-                Console.WriteLine(elem.ToString());
+                Console.WriteLine(elem);
             }
         }
     }

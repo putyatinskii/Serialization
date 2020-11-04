@@ -1,8 +1,11 @@
 tatneft 400 true
 Yandex 4500 false
+Bistro_dengi 950 16 true
 NorNikel 20000 true
+Brusnika 1000 12 true
 mtc 320 true
 Gazprom 170 true
+OFZ 1050 7 false
 Sber 220 true
-tattelecom 3000 true
-tesla 
+tattelecom 0,03 true
+Sar_obl 1010 10 false

@@ -24,3 +24,5 @@ C:\Users\Asus\source\repos\Serialization\Serialization\bin\Debug\System.Text.Jso
 C:\Users\Asus\source\repos\Serialization\Serialization\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\Asus\source\repos\Serialization\Serialization\bin\Debug\System.ValueTuple.xml
 C:\Users\Asus\source\repos\Serialization\Serialization\obj\Debug\Serialization.csproj.CopyComplete
+C:\Users\Asus\source\repos\Serialization\Serialization\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Asus\source\repos\Serialization\Serialization\bin\Debug\Newtonsoft.Json.xml
